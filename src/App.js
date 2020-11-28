@@ -1,10 +1,10 @@
-import './App.css';
+import "./App.css";
+import HomePage from "./homepage.component";
 
 function App() {
-    console.log('fuck')
   return (
     <div>
-Hello World
+      <HomePage />
     </div>
   );
 }
