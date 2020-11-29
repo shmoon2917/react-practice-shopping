@@ -1,6 +1,6 @@
 # Section 4: Master Project: Setting Up E-Commerce Project
 
-## Reference
+## :open_book: Reference
 
 ### Updating Packages
 
@@ -10,7 +10,7 @@ lock 파일이 있다면 `rm -rf yarn.lock or package-lock.json`
 
 `npm update -D` 입력 후 vulnerabilities 있다면 `npm audit fix`
 
-## Issue
+## :heavy_exclamation_mark: Issue
 
 ### Version of node-sass
 
