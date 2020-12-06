@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import './App.css';
@@ -61,8 +62,7 @@ const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
-});
+const mapDispatchToProps = (dispatch) =>
+  bindActionCreators({ setCurrentUser }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
