@@ -23,3 +23,9 @@ connect()는 HOC **(컴포넌트를 특정 함수로 감싸서 특정 값 또는
 [Redux Docs](https://react-redux.js.org/api/connect)
 
 [Velopert](https://react.vlpt.us/redux/09-connect.html)
+
+### state memoization and Reselect
+
+리덕스의 state는 매번 state가 변경될 때마다 새로운 객체가 된다. 변경되는 것이 없다고 하더라도 reducer에서 새로운 겍체로 리턴한다. state가 변경될 때마다 매번 `mapStateToProps`와 `mapDispatchToProps`가 호출되는데, **실제로 데이터가 변경되지 않음에도 새로운 객체를 props로 주입하여 컴포넌트가 리렌더링되는 것은 퍼포먼스에 영향을 준다.**
+
+따라서 기존 state를 메모이제이션하여 데이터의 변경이 없다면 컴포넌트의 리렌더링을 막는 기능이 필요한데, 이를 도와줄 라이브러리가 `Reselect`이다.
