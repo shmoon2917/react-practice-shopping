@@ -36,7 +36,7 @@ connect()는 HOC **(컴포넌트를 특정 함수로 감싸서 특정 값 또는
 
 #### CreateStructuredSelector
 
-reselct 라이브러리의 `CreateStructuredSelector` 메소드를 사용하면 mapStateToProps를 통해 필요한 state를 받아올 때 일일이 셀렉터들마다 state를 주입할 필요 없이 간단하게 작성할 수 있다.
+reselect 라이브러리의 `CreateStructuredSelector` 메소드를 사용하면 mapStateToProps를 통해 필요한 state를 받아올 때 일일이 셀렉터들마다 state를 주입할 필요 없이 간단하게 작성할 수 있다.
 
 ```javascript
 // createStructuredSelector 사용
