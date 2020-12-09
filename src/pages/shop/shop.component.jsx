@@ -22,16 +22,21 @@ class ShopPage extends React.Component {
     loading: true,
   };
 
-  // unsubscribeFromSnapshot = null;
-
   componentDidMount() {
     const { updateCollections } = this.props;
     const collectionRef = firestore.collection('collections');
-    collectionRef.onSnapshot((snapshot) => {
-      const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-      updateCollections(collectionsMap);
-      this.setState({ loading: false });
-    });
+
+    fetch(
+      `https://firestore.googleapis.com/v1/projects/corwn-shopping/databases/(default)/documents/collections`
+    )
+      .then((response) => response.json())
+      .then((collections) => console.log(collections));
+
+    // collectionRef.get().then((snapshot) => {
+    //   const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
+    //   updateCollections(collectionsMap);
+    //   this.setState({ loading: false });
+    // });
   }
 
   render() {

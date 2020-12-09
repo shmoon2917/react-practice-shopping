@@ -2,6 +2,12 @@
 
 ## :raising_hand_man: TDIL
 
+### CSS Keyframe Animations
+
+[W3Schools](https://www.w3schools.com/css/css3_animations.asp)
+
+ToDo
+
 ### with-spinner component(HOC) 작성
 
 백엔드로부터 데이터를 fetching 해오는 로직은 구현되었으나, INITIAL_DATA의 값을 `null`로 수정한 탓에 처음 컴포넌트에서 `state`를 selector를 통해 받아올 때, 에러가 발생하였다.

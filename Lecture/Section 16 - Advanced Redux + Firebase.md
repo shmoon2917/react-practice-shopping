@@ -2,6 +2,10 @@
 
 ## :raising_hand_man: TDIL
 
+### Firebaes batch() method
+
+[Firebase Docs](https://firebase.google.com/docs/firestore/manage-data/transactions)
+
 ### 백엔드로부터 데이터를 fecthing 해올 컴포넌트를 선택하는 방법
 
 데이터를 사용하는 자식 컴포넌트들의 가장 가까운 공통 조상 컴포넌트를 선택하면 된다. DRY(Don't Repeat Yourself) 매너를 지키는 좋은 방식이다.
