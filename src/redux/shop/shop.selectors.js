@@ -8,6 +8,11 @@ export const selectCollections = createSelector(
   (shop) => shop.collections
 );
 
+export const selectIsCollectionsFetching = createSelector(
+  [selectShop],
+  (shop) => shop.isFetching
+);
+
 export const selectCollectionsArray = createSelector(
   [selectCollections],
   (collections) =>
@@ -18,4 +23,9 @@ export const selectCollection = memoize((collectionUrlParam) =>
   createSelector([selectCollections], (collections) =>
     collections ? collections[collectionUrlParam] : null
   )
+);
+
+export const selectIsCollectionsLoaded = createSelector(
+  [selectShop],
+  (shop) => !!shop.collections
 );
