@@ -1,6 +1,6 @@
 import React from 'react';
-import { auth } from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
@@ -13,12 +13,13 @@ import {
 import CartIcon from '../../components/cart-icon/cart-icon.component';
 import CartDropdownContainer from '../../components/cart-dropdown/cart-dropdown.container';
 
+import { signOutStart } from '../../redux/user/user.actions';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
-const Header = ({ currentUser, hidden }) => {
+const Header = ({ currentUser, hidden, signOutStart }) => {
   const signOut = () => {
-    auth.signOut();
+    signOutStart();
   };
 
   return (
@@ -48,4 +49,12 @@ const mapStateToProps = createStructuredSelector({
   hidden: selectCartHidden,
 });
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps = (dispatch) =>
+  bindActionCreators(
+    {
+      signOutStart,
+    },
+    dispatch
+  );
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -56,6 +56,16 @@ export const convertCollectionsSnapshotToMap = (collections) => {
   }, {});
 };
 
+// just 'mimicking' functionality that we may encounter when we don't have firebase as the backend
+export const getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+      unsubscribe();
+      resolve(userAuth);
+    }, reject);
+  });
+};
+
 // data migration function
 export const addCollectionAndDocuments = async (
   collectionKey,
