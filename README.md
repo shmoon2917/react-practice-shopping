@@ -13,8 +13,8 @@
 - [x] 5. `redux thunk/saga` 로직 구현하여 기존 firebase 데이터를 페칭해오는 방식을 `observable` 패턴에서 비동기 `promise` 패턴으로 redux 모듈과 연동
 - [x] 6. custom HOC 구현(withSpinner)
 - [x] 7. `styled-components` 적용 - 스타일 코드 모두 마이그레이션 완료
-- [ ] 8. **(WIP)** `Hooks` 코드로 기존 class component 리팩토링 및 Context API 구현
-- [ ] 9. (TODO) `GraphQL + Apollo` 적용하여 redux state flow 대체
+- [x] 8. `Hooks` 코드로 기존 class component 리팩토링 및 `Context API` 구현
+- [ ] 9. **(WIP)** `GraphQL + Apollo` 적용하여 redux state flow 대체
 - [ ] 10. (TODO) Performance Optimization
 - [ ] 11. (TODO) Testing - `jest` 사용
 
