@@ -80,3 +80,9 @@ const toggleHidden = () => setHidden(!hidden);
 #### Conclusion
 
 애플리케이션이 커지면 리덕스 사용이 필요해질 것이다. 포트폴리오 프로젝트나 랜딩 페이지 정도의 재사용하는 경우가 많지 않고 볼륨이 적은 프로젝트인 경우, context API 를 쓰면 좋다.
+
+### Context API with async hooks as an alternative to Redux
+
+[Link](https://itnext.io/when-you-finally-decided-to-rid-yourself-of-redux-8fff0624d2fb)
+
+- 읽어보기
