@@ -2,26 +2,28 @@
 
 ## :raising_hand_man: TDIL
 
-### Introduction To GraphQL
+### 참고 링크
 
-무엇을 해결하려 했는가?
+[GraphQL Docs](https://graphql.org/)
 
-rest 패러다임은
+[Apollo Docs](https://www.apollographql.com/docs/)
 
-comment를 얻기 위해서 post를 조회하고, 또 다시 user 를 조회하는 3번의 리퀘스트를 거쳐야한다.
+- 읽어보기 및 꼭 튜토리얼 해보기
 
-특정 데이터를 가져오기 위해서 너무 많은 데이터를 오버페칭해야하는 경우가 생김.
+[kakao Tech - GraphQL 개념잡기](https://tech.kakao.com/2019/08/01/graphql-basic/)
 
-QraphQL 이 해결한다.
+[Prisma로 GraphQL 쉽게 도입하기](https://medium.com/labelstore/prisma%EB%A1%9C-graphql%EC%9D%84-%EC%89%BD%EA%B2%8C-%EB%8F%84%EC%9E%85%ED%95%98%EA%B8%B0-fa64dcf63382)
 
-### Backend Code
+[GraphQL과 RESTful API](https://www.holaxprogramming.com/2018/01/20/graphql-vs-restful-api/)
 
-Quick way to build a GraphQL server: [graphql-yoga](https://github.com/prisma-labs/graphql-yoga)
+- 읽어보기
 
-A quick step by step guide on how to set up your own GraphQL server: [Apollo docs](https://www.apollographql.com/docs/tutorial/introduction/)
+[Apollo Client로 리액트 앱 개발하기 + Hooks](https://www.daleseo.com/graphql-react-apollo-client/)
 
-### GraphQL Playground
+- 읽어보기
 
-type or `null`
+**Crown Clothing Application**
 
-### Introduction To Apollo
+Client(react): [Link](https://github.com/shmoon2917/graphql-lesson)
+
+Server(Prisma + GraphQL Yoga): [Link](https://github.com/shmoon2917/crwn-clothing-prisma)
