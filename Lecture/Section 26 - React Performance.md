@@ -43,3 +43,9 @@ main.xxx.chunk.js -> react code that we wrote
 우리의 앱에서
 
 selector와 리셀렉터를 이용해 props으로 받아오는 state들은 모두 메모이징된다. 이미 최적화를 해놓은 것.
+
+### Gzipping and Compression
+
+히로쿠에 배포할 때, after gzip 다음에 나오는 각 번들 사이즈보다 실제로 네트워크를 통해 살펴본 번들 사이즈가 더 크다.
+
+compression install
