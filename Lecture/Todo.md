@@ -11,6 +11,7 @@
 - [ ] React TypeScript Cheetsheet 읽기
 - [ ] AWS 공부하기
 - [ ] crwn 앱 redux 코드 hooks로 재작성해보기
+- [ ] crwn 앱 responsive css 코드 작성해보기
 
 ## Etc.
 
